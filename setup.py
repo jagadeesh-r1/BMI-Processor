@@ -9,5 +9,6 @@ setup(
     version='0.2',
     license='GNU General Public License v3.0',
     description='This package is used to process BMI (BodyMassIndex) using Height and Weight of person. The input must a iterable of json objects',
-    long_description=open('README.md').read()
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown'
 )
