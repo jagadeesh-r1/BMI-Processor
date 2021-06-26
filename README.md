@@ -35,6 +35,19 @@ pip install bmi-batch-process
    ```python3
    processed_results = obj.process_start('input_file.json', 'output_path.json')   
    ```
+## Task 2
+
+Counting No of OverWeight people can be done by the following
+
+- import count_overweight function
+    ```python3
+    from BMI.count_overweight import count_overweight
+    ```
+- give the processed records file as input
+    ```python3
+    count_overweight('path of processed records')
+    #prints the no of over weight people
+    ```
 
 ## License
 
