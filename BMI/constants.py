@@ -8,8 +8,8 @@ def catch_exceptions(func):
             start_time = time.time()
             return_value = func(*args, **kwargs)
             end_time = time.time()
-            logger = logging.getLogger(func.__name__)
-            logger.warning("Function {} took {} seconds to complete\n".format(func.__name__,end_time-start_time))
+            # logger = logging.getLogger(func.__name__)
+            # logger.warning("Function {} took {} seconds to complete\n".format(func.__name__,end_time-start_time))
 
             return return_value
         except Exception as e:
