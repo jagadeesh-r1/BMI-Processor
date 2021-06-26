@@ -44,3 +44,4 @@ class BodyMassIndex:
         with open(output_file_path,'w') as outfile:
             json.dump(processed_data,outfile,indent=4)
 
+BMI = BodyMassIndex()
