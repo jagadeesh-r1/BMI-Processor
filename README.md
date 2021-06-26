@@ -3,7 +3,7 @@
 # Body Mass Index Batch Processor
 
 
-[![made-with-python]](https://pypi.org/project/bmi-batch-process/)
+[![made-with-python](https://img.shields.io/badge/v0.0.2%20-bmi_processor-1f425f.svg)](https://pypi.org/project/bmi-batch-process/)
 
 This Package is used to calculate BMI and Categorise the BMI in 5 Classes.
 ## Tech
