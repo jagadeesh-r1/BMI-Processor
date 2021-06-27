@@ -3,10 +3,11 @@
 # Body Mass Index Batch Processor
 
 
-[![made-with-python](https://img.shields.io/badge/v0.0.2%20-bmi_processor-1f425f.svg)](https://pypi.org/project/bmi-batch-process/)
+[![made-with-python](https://img.shields.io/badge/v0.3%20-bmi_processor-1f425f.svg)](https://pypi.org/project/bmi-batch-process/)
 
-This Package is used to calculate BMI and Categorise the BMI in 5 Classes.
-## Tech
+This Package is used to calculate BMI and categorise the BMI in to 6 classes (i.e, Under Weight,Normal Weight,Over Weight,Moderately Obese,Severely Obese,Very Severely Obese) along with their health risks.
+
+## Development
 
 Python
 
@@ -30,7 +31,23 @@ pip install bmi-batch-process
     ```python3
     obj  = BodyMassIndex()
     ```
- 
+ - Input file example
+   ```python3
+   # the input must be an iterable of json objects
+   [
+      {
+        "Gender":"Male",
+        "HeightCm":171,
+        "WeightKg":96
+      },
+      {
+         "Gender":"Male",
+         "HeightCm":161,
+         "WeightKg":85
+      },
+      ...
+   ]
+   ```
  Example:
    ```python3
    processed_results = obj.process_start('input_file.json', 'output_path.json')   
